@@ -1,6 +1,6 @@
 # Awesome-Workload-Orchestration
 
-## Top Local & Edge Model Deployment Systems Ecosystem
+### Top Local & Edge Model Deployment Systems Ecosystem
 
 **Curated List of SaaS Products & Open-Source GitHub Projects**  
 *Focused on On-Device Inference, Quantized Model Serving & Distributed Local Clusters*  
@@ -111,105 +111,206 @@ Star the repo if you find it useful!
 Let's make local and edge model deployment more open, accessible, and private.
 # Awesome-Workload-Orchestration
 
-# Top Workload Orchestration Ecosystem
-
-**Curated List of SaaS Products & Open-Source GitHub Projects**  
-*Focused on Container Orchestration, Cluster Scheduling, Multi-Cloud Workload Placement & Production Runtime Platforms*  
-**Last updated: October 2026**
-
-This repository tracks notable **SaaS/hosted platforms** and **open-source projects** for **Workload Orchestration**. These systems schedule, place, scale, and heal applications—containers, VMs, and batch jobs—across clusters and clouds.
-
-**Examples** include Kubernetes, Google GKE, AWS EKS, Azure AKS, Red Hat OpenShift, Rancher, VMware Tanzu, Mirantis Cloud, Platform9, Nutanix Karbon, and **HashiCorp Nomad**—a simple and flexible workload orchestrator.
-
-**Open-source emphasis**: Workload orchestration is led by open source. **Kubernetes**, **Nomad**, **OKD**, **k3s**, **k0s**, and related projects form the industry foundation. This section is heavily expanded.
-
-Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
-
-## Table of Contents
-- [SaaS/Hosted Platforms](#saas-hosted-platforms)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
-
-## SaaS/Hosted Platforms
-
-- **[Google Kubernetes Engine (GKE), Amazon EKS, Azure AKS](https://cloud.google.com/kubernetes-engine)**  
-  Managed Kubernetes services from the major public clouds—control-plane operations, upgrades, and cloud integrations handled by the provider.
-
-- **[Red Hat OpenShift (managed), VMware Tanzu, Rancher Prime](https://www.redhat.com/en/technologies/cloud-computing/openshift)**  
-  Enterprise Kubernetes platforms with opinionated security, developer experience, and multi-cluster management.
-
-- **[Platform9, Mirantis Kubernetes Engine, Nutanix Karbon](https://platform9.com/)**  
-  Managed or appliance-style Kubernetes offerings for hybrid and on-prem environments.
-
-- **[HashiCorp Nomad Cloud / enterprise offerings](https://www.hashicorp.com/products/nomad)**  
-  Commercial support and managed options around the Nomad orchestrator for mixed workloads.
-
-- **[Other managed orchestration platforms](https://aws.amazon.com/eks/)**  
-  Additional hosted Kubernetes and workload-scheduling services.
-
-## Open-Source GitHub Projects
-
-- **[Kubernetes](https://github.com/kubernetes/kubernetes)**  
-  De facto open-source container orchestration standard—scheduling, service discovery, scaling, and self-healing for cloud-native workloads.
-
-- **[Nomad](https://github.com/hashicorp/nomad)**  
-  Simple and flexible open-source workload orchestrator from HashiCorp—supports containers, VMs, and standalone binaries with a smaller operational footprint than full Kubernetes.
-
-- **[OKD](https://github.com/okd-project/okd)**  
-  Community distribution of Kubernetes that powers OpenShift—opinionated platform layer on upstream Kubernetes.
-
-- **[k3s](https://github.com/k3s-io/k3s)**  
-  Lightweight certified Kubernetes distribution from Rancher—optimized for edge, IoT, and resource-constrained clusters.
-
-- **[k0s](https://github.com/k0sproject/k0s)**  
-  Zero-friction Kubernetes distribution—single binary, minimal dependencies, strong for air-gapped and simple deployments.
-
-- **[Kubeadm / Cluster API](https://github.com/kubernetes-sigs/cluster-api)**  
-  Open tools for bootstrapping and lifecycle-managing Kubernetes clusters declaratively across infrastructure providers.
-
-- **[Docker Swarm](https://github.com/moby/moby)**  
-  Native Docker clustering and orchestration—simpler alternative for teams already deep in the Docker engine model.
-
-- **[Apache Mesos / Marathon (legacy & niche)](https://github.com/apache/mesos)**  
-  Open distributed systems kernel historically used for large-scale mixed workloads; still relevant in some environments.
-
-- **[Nomad + Consul + Vault stack](https://github.com/hashicorp/nomad)**  
-  Open HashiCorp pattern for orchestration, service discovery, and secrets alongside or instead of Kubernetes.
-
-- **[Virtual Kubelet / multi-cluster projects](https://github.com/virtual-kubelet/virtual-kubelet)**  
-  Open bridges that extend Kubernetes scheduling to serverless and other provider backends.
-
-### Additional Strong Open-Source Options
-
-- **Full CNCF stack**: Kubernetes + Cluster API + CNI/CSI ecosystem.
-- **Lightweight K8s**: k3s or k0s for edge and small teams.
-- **Non-K8s orchestration**: Nomad for simpler ops and mixed workload types.
-- **Enterprise-shaped open**: OKD as the community OpenShift path.
-- **Composable stacks**: Orchestrator → GitOps (Argo CD/Flux) → service mesh → observability.
-- Managed services reduce control-plane toil; the scheduler and APIs remain open in Kubernetes-compatible offerings.
-
-**Frameworks for building custom systems**:  
-**Kubernetes** for the ecosystem and portability standard; **Nomad** when you want simpler operations and non-container jobs; **k3s/k0s** for edge and lab clusters; **OKD** for OpenShift-aligned platforms.  
-Pair with open GitOps, networking, and storage projects for a full platform.  
-Fully open workload orchestration is production-proven at global scale.
-
-## How to Contribute
-
-1. Fork the repo.
-2. Add/edit entries in `README.md` (follow existing format).
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS/hosted or open-source.
-4. Submit PR with a short explanation.
-
-Star the repo if you find it useful!
-
-## Disclaimer
-
-- This is a **community-curated** list — not exhaustive and not an endorsement.
-- Orchestrators control production workloads. Harden API servers, RBAC, network policies, and supply chain (images, admission). Misconfiguration can expose clusters or cause widespread outages.
-- Open-source orchestrators offer transparency and portability but require operational expertise. Managed platforms shift control-plane operations to the vendor. Neither replaces application design for failure and secure defaults.
-
----
-
-**Made for platform engineers, SREs, and teams running production workloads at scale.**  
+## Top Workload Orchestration Ecosystem
+
+
+
+**Curated List of SaaS Products & Open-Source GitHub Projects**  
+
+*Focused on Container Orchestration, Cluster Scheduling, Multi-Cloud Workload Placement & Production Runtime Platforms*  
+
+**Last updated: October 2026**
+
+
+
+This repository tracks notable **SaaS/hosted platforms** and **open-source projects** for **Workload Orchestration**. These systems schedule, place, scale, and heal applications—containers, VMs, and batch jobs—across clusters and clouds.
+
+
+
+**Examples** include Kubernetes, Google GKE, AWS EKS, Azure AKS, Red Hat OpenShift, Rancher, VMware Tanzu, Mirantis Cloud, Platform9, Nutanix Karbon, and **HashiCorp Nomad**—a simple and flexible workload orchestrator.
+
+
+
+**Open-source emphasis**: Workload orchestration is led by open source. **Kubernetes**, **Nomad**, **OKD**, **k3s**, **k0s**, and related projects form the industry foundation. This section is heavily expanded.
+
+
+
+Contributions welcome! Open a PR to add/update entries. Keep descriptions factual and link to official sites.
+
+
+
+## Table of Contents
+
+- [SaaS/Hosted Platforms](#saas-hosted-platforms)
+
+- [Open-Source GitHub Projects](#open-source-github-projects)
+
+- [How to Contribute](#how-to-contribute)
+
+- [Disclaimer](#disclaimer)
+
+
+
+## SaaS/Hosted Platforms
+
+
+
+- **[Google Kubernetes Engine (GKE), Amazon EKS, Azure AKS](https://cloud.google.com/kubernetes-engine)**  
+
+  Managed Kubernetes services from the major public clouds—control-plane operations, upgrades, and cloud integrations handled by the provider.
+
+
+
+- **[Red Hat OpenShift (managed), VMware Tanzu, Rancher Prime](https://www.redhat.com/en/technologies/cloud-computing/openshift)**  
+
+  Enterprise Kubernetes platforms with opinionated security, developer experience, and multi-cluster management.
+
+
+
+- **[Platform9, Mirantis Kubernetes Engine, Nutanix Karbon](https://platform9.com/)**  
+
+  Managed or appliance-style Kubernetes offerings for hybrid and on-prem environments.
+
+
+
+- **[HashiCorp Nomad Cloud / enterprise offerings](https://www.hashicorp.com/products/nomad)**  
+
+  Commercial support and managed options around the Nomad orchestrator for mixed workloads.
+
+
+
+- **[Other managed orchestration platforms](https://aws.amazon.com/eks/)**  
+
+  Additional hosted Kubernetes and workload-scheduling services.
+
+
+
+## Open-Source GitHub Projects
+
+
+
+- **[Kubernetes](https://github.com/kubernetes/kubernetes)**  
+
+  De facto open-source container orchestration standard—scheduling, service discovery, scaling, and self-healing for cloud-native workloads.
+
+
+
+- **[Nomad](https://github.com/hashicorp/nomad)**  
+
+  Simple and flexible open-source workload orchestrator from HashiCorp—supports containers, VMs, and standalone binaries with a smaller operational footprint than full Kubernetes.
+
+
+
+- **[OKD](https://github.com/okd-project/okd)**  
+
+  Community distribution of Kubernetes that powers OpenShift—opinionated platform layer on upstream Kubernetes.
+
+
+
+- **[k3s](https://github.com/k3s-io/k3s)**  
+
+  Lightweight certified Kubernetes distribution from Rancher—optimized for edge, IoT, and resource-constrained clusters.
+
+
+
+- **[k0s](https://github.com/k0sproject/k0s)**  
+
+  Zero-friction Kubernetes distribution—single binary, minimal dependencies, strong for air-gapped and simple deployments.
+
+
+
+- **[Kubeadm / Cluster API](https://github.com/kubernetes-sigs/cluster-api)**  
+
+  Open tools for bootstrapping and lifecycle-managing Kubernetes clusters declaratively across infrastructure providers.
+
+
+
+- **[Docker Swarm](https://github.com/moby/moby)**  
+
+  Native Docker clustering and orchestration—simpler alternative for teams already deep in the Docker engine model.
+
+
+
+- **[Apache Mesos / Marathon (legacy & niche)](https://github.com/apache/mesos)**  
+
+  Open distributed systems kernel historically used for large-scale mixed workloads; still relevant in some environments.
+
+
+
+- **[Nomad + Consul + Vault stack](https://github.com/hashicorp/nomad)**  
+
+  Open HashiCorp pattern for orchestration, service discovery, and secrets alongside or instead of Kubernetes.
+
+
+
+- **[Virtual Kubelet / multi-cluster projects](https://github.com/virtual-kubelet/virtual-kubelet)**  
+
+  Open bridges that extend Kubernetes scheduling to serverless and other provider backends.
+
+
+
+### Additional Strong Open-Source Options
+
+
+
+- **Full CNCF stack**: Kubernetes + Cluster API + CNI/CSI ecosystem.
+
+- **Lightweight K8s**: k3s or k0s for edge and small teams.
+
+- **Non-K8s orchestration**: Nomad for simpler ops and mixed workload types.
+
+- **Enterprise-shaped open**: OKD as the community OpenShift path.
+
+- **Composable stacks**: Orchestrator → GitOps (Argo CD/Flux) → service mesh → observability.
+
+- Managed services reduce control-plane toil; the scheduler and APIs remain open in Kubernetes-compatible offerings.
+
+
+
+**Frameworks for building custom systems**:  
+
+**Kubernetes** for the ecosystem and portability standard; **Nomad** when you want simpler operations and non-container jobs; **k3s/k0s** for edge and lab clusters; **OKD** for OpenShift-aligned platforms.  
+
+Pair with open GitOps, networking, and storage projects for a full platform.  
+
+Fully open workload orchestration is production-proven at global scale.
+
+
+
+## How to Contribute
+
+
+
+1. Fork the repo.
+
+2. Add/edit entries in `README.md` (follow existing format).
+
+3. Include: name, link, 1–2 sentence description, and whether it's SaaS/hosted or open-source.
+
+4. Submit PR with a short explanation.
+
+
+
+Star the repo if you find it useful!
+
+
+
+## Disclaimer
+
+
+
+- This is a **community-curated** list — not exhaustive and not an endorsement.
+
+- Orchestrators control production workloads. Harden API servers, RBAC, network policies, and supply chain (images, admission). Misconfiguration can expose clusters or cause widespread outages.
+
+- Open-source orchestrators offer transparency and portability but require operational expertise. Managed platforms shift control-plane operations to the vendor. Neither replaces application design for failure and secure defaults.
+
+
+
+---
+
+
+
+**Made for platform engineers, SREs, and teams running production workloads at scale.**  
+
 Let's expand open orchestration while recognizing the operational convenience that managed Kubernetes and enterprise platforms deliver.
