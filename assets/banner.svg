@@ -1,0 +1,167 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 320" width="100%" height="320" style="background:#070b14;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060913" />
+      <stop offset="50%" stop-color="#0a1226" />
+      <stop offset="100%" stop-color="#120c24" />
+    </linearGradient>
+
+    <!-- Vibrant Gradient Accents -->
+    <linearGradient id="primaryGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="50%" stop-color="#818cf8" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+
+    <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0.0" />
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+    <filter id="slightGlow">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="40" y2="0" stroke="#1e293b" stroke-width="0.7" stroke-opacity="0.4" />
+      <line x1="0" y1="0" x2="0" y2="40" stroke="#1e293b" stroke-width="0.7" stroke-opacity="0.4" />
+      <circle cx="40" cy="40" r="1" fill="#38bdf8" fill-opacity="0.25" />
+    </pattern>
+  </defs>
+
+  <style>
+    @keyframes pulseGlow {
+      0%, 100% { opacity: 0.35; transform: scale(1); }
+      50% { opacity: 0.65; transform: scale(1.08); }
+    }
+    @keyframes dashFlow {
+      0% { stroke-dashoffset: 120; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes floatOrb {
+      0%, 100% { transform: translateY(0px) translateX(0px); }
+      50% { transform: translateY(-12px) translateX(8px); }
+    }
+    @keyframes pingNode {
+      0% { r: 3; opacity: 1; }
+      100% { r: 16; opacity: 0; }
+    }
+    .flow-line {
+      stroke-dasharray: 6, 6;
+      animation: dashFlow 4s linear infinite;
+    }
+    .ambient-orb {
+      animation: floatOrb 8s ease-in-out infinite;
+    }
+    .node-ping {
+      animation: pingNode 2.5s cubic-bezier(0, 0, 0.2, 1) infinite;
+    }
+  </style>
+
+  <!-- Base Canvas -->
+  <rect width="960" height="320" fill="url(#bgGrad)" />
+  <rect width="960" height="320" fill="url(#grid)" />
+
+  <!-- DYNAMIC BACKGROUND ELEMENTS (Animated Orbs & Data Streams) -->
+  <g class="ambient-orb" opacity="0.6">
+    <circle cx="140" cy="80" r="90" fill="#38bdf8" filter="url(#glow)" opacity="0.15">
+      <animate attributeName="opacity" values="0.12;0.22;0.12" dur="6s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="820" cy="240" r="110" fill="#a855f7" filter="url(#glow)" opacity="0.18">
+      <animate attributeName="opacity" values="0.15;0.28;0.15" dur="7s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="760" cy="70" r="75" fill="#6366f1" filter="url(#glow)" opacity="0.15">
+      <animate attributeName="opacity" values="0.1;0.25;0.1" dur="5s" repeatCount="indefinite" />
+    </circle>
+  </g>
+
+  <!-- Network Cluster Graphic Lines (Background) -->
+  <g opacity="0.45">
+    <!-- Scheduling Mesh Topology -->
+    <path d="M 80,60 L 220,110 L 160,240 L 80,60" fill="none" stroke="#38bdf8" stroke-width="1.2" class="flow-line" />
+    <path d="M 880,70 L 750,130 L 840,250 L 880,70" fill="none" stroke="#a855f7" stroke-width="1.2" class="flow-line" />
+    <path d="M 220,110 Q 480,20 750,130" fill="none" stroke="#60a5fa" stroke-width="1" stroke-dasharray="4,8" class="flow-line" />
+    <path d="M 160,240 Q 480,300 840,250" fill="none" stroke="#818cf8" stroke-width="1" stroke-dasharray="4,8" class="flow-line" />
+
+    <!-- Cluster Nodes with Pings -->
+    <circle cx="80" cy="60" r="4" fill="#38bdf8" />
+    <circle cx="80" cy="60" r="4" fill="none" stroke="#38bdf8" stroke-width="1" class="node-ping" />
+
+    <circle cx="220" cy="110" r="5" fill="#60a5fa" />
+    <circle cx="160" cy="240" r="4" fill="#38bdf8" />
+
+    <circle cx="880" cy="70" r="4" fill="#c084fc" />
+    <circle cx="880" cy="70" r="4" fill="none" stroke="#c084fc" stroke-width="1" class="node-ping" style="animation-delay: 1.2s;" />
+
+    <circle cx="750" cy="130" r="5" fill="#a855f7" />
+    <circle cx="840" cy="250" r="4" fill="#818cf8" />
+  </g>
+
+  <!-- CENTRAL FOREGROUND CARD (Guarantees Text is 100% Legible & Always Visible) -->
+  <g transform="translate(480, 160)">
+    <!-- Backdrop Card for Foreground Clarity -->
+    <rect x="-420" y="-125" width="840" height="250" rx="18" fill="#090e1c" fill-opacity="0.82" stroke="#1e293b" stroke-width="1.5" />
+    <rect x="-420" y="-125" width="840" height="250" rx="18" fill="url(#glowGrad)" pointer-events="none" />
+
+    <!-- Top Badge / Pill -->
+    <g transform="translate(0, -82)">
+      <rect x="-160" y="-14" width="320" height="28" rx="14" fill="#0f172a" stroke="#334155" stroke-width="1" />
+      <circle cx="-136" cy="0" r="4" fill="#10b981">
+        <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite" />
+      </circle>
+      <text x="0" y="4" text-anchor="middle" fill="#94a3b8" font-size="12" font-weight="600" letter-spacing="1.2">
+        ENTERPRISE CLOUD-NATIVE ECOSYSTEM
+      </text>
+    </g>
+
+    <!-- Main Title (Strictly Foreground) -->
+    <text x="0" y="-20" text-anchor="middle" font-size="34" font-weight="800" letter-spacing="-0.5" fill="#ffffff">
+      AWESOME WORKLOAD ORCHESTRATION
+    </text>
+
+    <!-- Gradient Subtitle Accent Line -->
+    <rect x="-120" y="-6" width="240" height="2" fill="url(#primaryGrad)" rx="1" />
+
+    <!-- Subtitle (Clear Foreground) -->
+    <text x="0" y="24" text-anchor="middle" font-size="15" font-weight="400" fill="#94a3b8">
+      Curated Directory of Container Schedulers, Cluster Runtimes &amp; Multi-Cloud Platforms
+    </text>
+
+    <!-- Interactive Badges / Capability Pills (Foreground) -->
+    <g transform="translate(0, 72)">
+      <!-- Pill 1: Kubernetes -->
+      <g transform="translate(-250, 0)">
+        <rect x="-55" y="-14" width="110" height="28" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="0.8" />
+        <text x="0" y="4" text-anchor="middle" fill="#e0f2fe" font-size="12" font-weight="500">☸️ Kubernetes</text>
+      </g>
+      <!-- Pill 2: HashiCorp Nomad -->
+      <g transform="translate(-125, 0)">
+        <rect x="-50" y="-14" width="100" height="28" rx="14" fill="#1e293b" stroke="#818cf8" stroke-width="0.8" />
+        <text x="0" y="4" text-anchor="middle" fill="#e0e7ff" font-size="12" font-weight="500">⚡ Nomad</text>
+      </g>
+      <!-- Pill 3: Multi-Cloud -->
+      <g transform="translate(0, 0)">
+        <rect x="-55" y="-14" width="110" height="28" rx="14" fill="#1e293b" stroke="#a855f7" stroke-width="0.8" />
+        <text x="0" y="4" text-anchor="middle" fill="#f3e8ff" font-size="12" font-weight="500">☁️ Multi-Cloud</text>
+      </g>
+      <!-- Pill 4: Edge & IoT -->
+      <g transform="translate(125, 0)">
+        <rect x="-50" y="-14" width="100" height="28" rx="14" fill="#1e293b" stroke="#38bdf8" stroke-width="0.8" />
+        <text x="0" y="4" text-anchor="middle" fill="#e0f2fe" font-size="12" font-weight="500">📡 Edge / IoT</text>
+      </g>
+      <!-- Pill 5: Batch & AI/ML -->
+      <g transform="translate(250, 0)">
+        <rect x="-55" y="-14" width="110" height="28" rx="14" fill="#1e293b" stroke="#34d399" stroke-width="0.8" />
+        <text x="0" y="4" text-anchor="middle" fill="#d1fae5" font-size="12" font-weight="500">🤖 Batch &amp; AI</text>
+      </g>
+    </g>
+  </g>
+</svg>
