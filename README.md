@@ -87,11 +87,11 @@ The following table benchmarks the top commercial and fully managed workload orc
 
 ## 🐙 Top Open-Source Workload Orchestration Projects
 
-The following list features top open-source workload orchestrators, schedulers, and cluster runtimes, sorted in **descending order by GitHub star count**. Beside each project name is an interactive star badge linking directly to that repository's stargazers page.
+The following list features top open-source workload orchestrators, schedulers, and cluster runtimes, sorted in **descending order by GitHub Stars_Count**. Beside each project name is an interactive Stars_Badge linking directly to that repository's stargazers page.
 
 ---
 
-### 1. [Kubernetes](https://github.com/kubernetes/kubernetes) [![GitHub stars](https://img.shields.io/github/stars/kubernetes/kubernetes?style=social&color=white)](https://github.com/kubernetes/kubernetes/stargazers)
+### 1. [Kubernetes](https://github.com/kubernetes/kubernetes) [![GitHub_Stars](https://img.shields.io/github/stars/kubernetes/kubernetes?style=social&color=white)](https://github.com/kubernetes/kubernetes/stargazers)
 
 - **Repository**: [kubernetes/kubernetes](https://github.com/kubernetes/kubernetes)
 - **License**: Apache-2.0 ⚖️
@@ -100,7 +100,7 @@ The following list features top open-source workload orchestrators, schedulers, 
 
 ---
 
-### 2. [Moby / Docker Engine & Swarm](https://github.com/moby/moby) [![GitHub stars](https://img.shields.io/github/stars/moby/moby?style=social&color=white)](https://github.com/moby/moby/stargazers)
+### 2. [Moby / Docker Engine & Swarm](https://github.com/moby/moby) [![GitHub_Stars](https://img.shields.io/github/stars/moby/moby?style=social&color=white)](https://github.com/moby/moby/stargazers)
 
 - **Repository**: [moby/moby](https://github.com/moby/moby)
 - **License**: Apache-2.0 ⚖️
@@ -109,7 +109,7 @@ The following list features top open-source workload orchestrators, schedulers, 
 
 ---
 
-### 3. [k3s](https://github.com/k3s-io/k3s) [![GitHub stars](https://img.shields.io/github/stars/k3s-io/k3s?style=social&color=white)](https://github.com/k3s-io/k3s/stargazers)
+### 3. [k3s](https://github.com/k3s-io/k3s) [![GitHub_Stars](https://img.shields.io/github/stars/k3s-io/k3s?style=social&color=white)](https://github.com/k3s-io/k3s/stargazers)
 
 - **Repository**: [k3s-io/k3s](https://github.com/k3s-io/k3s)
 - **License**: Apache-2.0 ⚖️
@@ -118,7 +118,7 @@ The following list features top open-source workload orchestrators, schedulers, 
 
 ---
 
-### 4. [Temporal](https://github.com/temporalio/temporal) [![GitHub stars](https://img.shields.io/github/stars/temporalio/temporal?style=social&color=white)](https://github.com/temporalio/temporal/stargazers)
+### 4. [Temporal](https://github.com/temporalio/temporal) [![GitHub_Stars](https://img.shields.io/github/stars/temporalio/temporal?style=social&color=white)](https://github.com/temporalio/temporal/stargazers)
 
 - **Repository**: [temporalio/temporal](https://github.com/temporalio/temporal)
 - **License**: MIT ⚖️
@@ -127,7 +127,7 @@ The following list features top open-source workload orchestrators, schedulers, 
 
 ---
 
-### 5. [Argo Workflows](https://github.com/argoproj/argo-workflows) [![GitHub stars](https://img.shields.io/github/stars/argoproj/argo-workflows?style=social&color=white)](https://github.com/argoproj/argo-workflows/stargazers)
+### 5. [Argo Workflows](https://github.com/argoproj/argo-workflows) [![GitHub_Stars](https://img.shields.io/github/stars/argoproj/argo-workflows?style=social&color=white)](https://github.com/argoproj/argo-workflows/stargazers)
 
 - **Repository**: [argoproj/argo-workflows](https://github.com/argoproj/argo-workflows)
 - **License**: Apache-2.0 ⚖️
@@ -136,7 +136,7 @@ The following list features top open-source workload orchestrators, schedulers, 
 
 ---
 
-### 6. [Nomad](https://github.com/hashicorp/nomad) [![GitHub stars](https://img.shields.io/github/stars/hashicorp/nomad?style=social&color=white)](https://github.com/hashicorp/nomad/stargazers)
+### 6. [Nomad](https://github.com/hashicorp/nomad) [![GitHub_Stars](https://img.shields.io/github/stars/hashicorp/nomad?style=social&color=white)](https://github.com/hashicorp/nomad/stargazers)
 
 - **Repository**: [hashicorp/nomad](https://github.com/hashicorp/nomad)
 - **License**: BSL-1.1 ⚖️
@@ -145,7 +145,7 @@ The following list features top open-source workload orchestrators, schedulers, 
 
 ---
 
-### 7. [Crossplane](https://github.com/crossplane/crossplane) [![GitHub stars](https://img.shields.io/github/stars/crossplane/crossplane?style=social&color=white)](https://github.com/crossplane/crossplane/stargazers)
+### 7. [Crossplane](https://github.com/crossplane/crossplane) [![GitHub_Stars](https://img.shields.io/github/stars/crossplane/crossplane?style=social&color=white)](https://github.com/crossplane/crossplane/stargazers)
 
 - **Repository**: [crossplane/crossplane](https://github.com/crossplane/crossplane)
 - **License**: Apache-2.0 ⚖️
@@ -154,7 +154,7 @@ The following list features top open-source workload orchestrators, schedulers, 
 
 ---
 
-### 8. [Talos Linux](https://github.com/siderolabs/talos) [![GitHub stars](https://img.shields.io/github/stars/siderolabs/talos?style=social&color=white)](https://github.com/siderolabs/talos/stargazers)
+### 8. [Talos Linux](https://github.com/siderolabs/talos) [![GitHub_Stars](https://img.shields.io/github/stars/siderolabs/talos?style=social&color=white)](https://github.com/siderolabs/talos/stargazers)
 
 - **Repository**: [siderolabs/talos](https://github.com/siderolabs/talos)
 - **License**: MPL-2.0 ⚖️
@@ -163,7 +163,7 @@ The following list features top open-source workload orchestrators, schedulers, 
 
 ---
 
-### 9. [MicroK8s](https://github.com/canonical/microk8s) [![GitHub stars](https://img.shields.io/github/stars/canonical/microk8s?style=social&color=white)](https://github.com/canonical/microk8s/stargazers)
+### 9. [MicroK8s](https://github.com/canonical/microk8s) [![GitHub_Stars](https://img.shields.io/github/stars/canonical/microk8s?style=social&color=white)](https://github.com/canonical/microk8s/stargazers)
 
 - **Repository**: [canonical/microk8s](https://github.com/canonical/microk8s)
 - **License**: Apache-2.0 ⚖️
@@ -172,7 +172,7 @@ The following list features top open-source workload orchestrators, schedulers, 
 
 ---
 
-### 10. [Flyte](https://github.com/flyteorg/flyte) [![GitHub stars](https://img.shields.io/github/stars/flyteorg/flyte?style=social&color=white)](https://github.com/flyteorg/flyte/stargazers)
+### 10. [Flyte](https://github.com/flyteorg/flyte) [![GitHub_Stars](https://img.shields.io/github/stars/flyteorg/flyte?style=social&color=white)](https://github.com/flyteorg/flyte/stargazers)
 
 - **Repository**: [flyteorg/flyte](https://github.com/flyteorg/flyte)
 - **License**: Apache-2.0 ⚖️
@@ -181,7 +181,7 @@ The following list features top open-source workload orchestrators, schedulers, 
 
 ---
 
-### 11. [k0s](https://github.com/k0sproject/k0s) [![GitHub stars](https://img.shields.io/github/stars/k0sproject/k0s?style=social&color=white)](https://github.com/k0sproject/k0s/stargazers)
+### 11. [k0s](https://github.com/k0sproject/k0s) [![GitHub_Stars](https://img.shields.io/github/stars/k0sproject/k0s?style=social&color=white)](https://github.com/k0sproject/k0s/stargazers)
 
 - **Repository**: [k0sproject/k0s](https://github.com/k0sproject/k0s)
 - **License**: Apache-2.0 ⚖️
@@ -190,7 +190,7 @@ The following list features top open-source workload orchestrators, schedulers, 
 
 ---
 
-### 12. [Volcano](https://github.com/volcano-sh/volcano) [![GitHub stars](https://img.shields.io/github/stars/volcano-sh/volcano?style=social&color=white)](https://github.com/volcano-sh/volcano/stargazers)
+### 12. [Volcano](https://github.com/volcano-sh/volcano) [![GitHub_Stars](https://img.shields.io/github/stars/volcano-sh/volcano?style=social&color=white)](https://github.com/volcano-sh/volcano/stargazers)
 
 - **Repository**: [volcano-sh/volcano](https://github.com/volcano-sh/volcano)
 - **License**: Apache-2.0 ⚖️
@@ -199,7 +199,7 @@ The following list features top open-source workload orchestrators, schedulers, 
 
 ---
 
-### 13. [Karmada](https://github.com/karmada-io/karmada) [![GitHub stars](https://img.shields.io/github/stars/karmada-io/karmada?style=social&color=white)](https://github.com/karmada-io/karmada/stargazers)
+### 13. [Karmada](https://github.com/karmada-io/karmada) [![GitHub_Stars](https://img.shields.io/github/stars/karmada-io/karmada?style=social&color=white)](https://github.com/karmada-io/karmada/stargazers)
 
 - **Repository**: [karmada-io/karmada](https://github.com/karmada-io/karmada)
 - **License**: Apache-2.0 ⚖️
@@ -208,7 +208,7 @@ The following list features top open-source workload orchestrators, schedulers, 
 
 ---
 
-### 14. [Apache Mesos](https://github.com/apache/mesos) [![GitHub stars](https://img.shields.io/github/stars/apache/mesos?style=social&color=white)](https://github.com/apache/mesos/stargazers)
+### 14. [Apache Mesos](https://github.com/apache/mesos) [![GitHub_Stars](https://img.shields.io/github/stars/apache/mesos?style=social&color=white)](https://github.com/apache/mesos/stargazers)
 
 - **Repository**: [apache/mesos](https://github.com/apache/mesos)
 - **License**: Apache-2.0 ⚖️
@@ -217,7 +217,7 @@ The following list features top open-source workload orchestrators, schedulers, 
 
 ---
 
-### 15. [Virtual Kubelet](https://github.com/virtual-kubelet/virtual-kubelet) [![GitHub stars](https://img.shields.io/github/stars/virtual-kubelet/virtual-kubelet?style=social&color=white)](https://github.com/virtual-kubelet/virtual-kubelet/stargazers)
+### 15. [Virtual Kubelet](https://github.com/virtual-kubelet/virtual-kubelet) [![GitHub_Stars](https://img.shields.io/github/stars/virtual-kubelet/virtual-kubelet?style=social&color=white)](https://github.com/virtual-kubelet/virtual-kubelet/stargazers)
 
 - **Repository**: [virtual-kubelet/virtual-kubelet](https://github.com/virtual-kubelet/virtual-kubelet)
 - **License**: Apache-2.0 ⚖️
@@ -226,7 +226,7 @@ The following list features top open-source workload orchestrators, schedulers, 
 
 ---
 
-### 16. [Cluster API](https://github.com/kubernetes-sigs/cluster-api) [![GitHub stars](https://img.shields.io/github/stars/kubernetes-sigs/cluster-api?style=social&color=white)](https://github.com/kubernetes-sigs/cluster-api/stargazers)
+### 16. [Cluster API](https://github.com/kubernetes-sigs/cluster-api) [![GitHub_Stars](https://img.shields.io/github/stars/kubernetes-sigs/cluster-api?style=social&color=white)](https://github.com/kubernetes-sigs/cluster-api/stargazers)
 
 - **Repository**: [kubernetes-sigs/cluster-api](https://github.com/kubernetes-sigs/cluster-api)
 - **License**: Apache-2.0 ⚖️
@@ -235,7 +235,7 @@ The following list features top open-source workload orchestrators, schedulers, 
 
 ---
 
-### 17. [Kueue](https://github.com/kubernetes-sigs/kueue) [![GitHub stars](https://img.shields.io/github/stars/kubernetes-sigs/kueue?style=social&color=white)](https://github.com/kubernetes-sigs/kueue/stargazers)
+### 17. [Kueue](https://github.com/kubernetes-sigs/kueue) [![GitHub_Stars](https://img.shields.io/github/stars/kubernetes-sigs/kueue?style=social&color=white)](https://github.com/kubernetes-sigs/kueue/stargazers)
 
 - **Repository**: [kubernetes-sigs/kueue](https://github.com/kubernetes-sigs/kueue)
 - **License**: Apache-2.0 ⚖️
@@ -244,7 +244,7 @@ The following list features top open-source workload orchestrators, schedulers, 
 
 ---
 
-### 18. [OKD](https://github.com/okd-project/okd) [![GitHub stars](https://img.shields.io/github/stars/okd-project/okd?style=social&color=white)](https://github.com/okd-project/okd/stargazers)
+### 18. [OKD](https://github.com/okd-project/okd) [![GitHub_Stars](https://img.shields.io/github/stars/okd-project/okd?style=social&color=white)](https://github.com/okd-project/okd/stargazers)
 
 - **Repository**: [okd-project/okd](https://github.com/okd-project/okd)
 - **License**: Apache-2.0 ⚖️
@@ -253,7 +253,7 @@ The following list features top open-source workload orchestrators, schedulers, 
 
 ---
 
-### 19. [Open Cluster Management (OCM)](https://github.com/open-cluster-management-io/ocm) [![GitHub stars](https://img.shields.io/github/stars/open-cluster-management-io/ocm?style=social&color=white)](https://github.com/open-cluster-management-io/ocm/stargazers)
+### 19. [Open Cluster Management (OCM)](https://github.com/open-cluster-management-io/ocm) [![GitHub_Stars](https://img.shields.io/github/stars/open-cluster-management-io/ocm?style=social&color=white)](https://github.com/open-cluster-management-io/ocm/stargazers)
 
 - **Repository**: [open-cluster-management-io/ocm](https://github.com/open-cluster-management-io/ocm)
 - **License**: Apache-2.0 ⚖️
